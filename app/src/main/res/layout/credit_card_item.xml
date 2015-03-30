@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cc_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/cc_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/card_background_amex"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <!--Card Number-->
+    <TextView
+        android:id="@+id/cc_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/text_icon_color"
+        android:textSize="18sp"/>
+
+    <!--Good Through-->
+    <TextView
+        android:id="@+id/cc_goodthru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="33dp"
+        android:layout_alignParentBottom="true"
+        android:text="GOOD\nTHRU"
+        android:textColor="@color/text_icon_color"
+        android:textSize="6sp"/>
+
+    <!--Exp Date -->
+    <TextView
+        android:id="@+id/cc_exp_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cc_goodthru"
+        android:layout_toEndOf="@id/cc_goodthru"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-1dp"
+        android:textColor="@color/text_icon_color"
+        android:textSize="14sp"/>
+
+    <!--Name-->
+    <TextView
+        android:id="@+id/cc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cc_goodthru"
+        android:layout_alignStart="@id/cc_goodthru"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/text_icon_color"
+        android:textSize="16sp"/>
+    </RelativeLayout>
+</FrameLayout>

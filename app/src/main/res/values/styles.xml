@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CoinAppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/CoinActionBar</item>
+    </style>
+
+    <style name="CoinActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/header_color</item>
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="displayOptions">showHome|useLogo</item>
+    </style>
+
+</resources>
