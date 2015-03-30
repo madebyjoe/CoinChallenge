@@ -10,6 +10,16 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is the challenge for Coin. It takes in a bunch of json with credit cards and spits out a list
+ * of cards. Right now the cards are sorted by newest (most recently created) first. It will also load
+ * images of the cards asynchronusly and they are cached as well. It is not clear what "enable" was
+ * supposed to do. Maybe it means they have a highlighted state? In the future, the updating should happen
+ * automatically instead of manually refreshing (possibly pull down to refresh) or when the app is
+ * started.
+ *
+ * Other than that. The ui is done and so is the main feature set.
+ */
 public class MainActivity extends Activity {
 
     private static final String TAG = MainActivity.class.getSimpleName();

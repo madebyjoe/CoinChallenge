@@ -26,6 +26,12 @@ assignment/card_background_amex.png",
 
     private static final String TIME_PATTERN = "yyyy-MM-ddHH:mm:ssz";
 
+    /*
+     time updated, enabled, and guid could and should be used in the future for better handling of
+     new data. However right now, it is not clear that they are useful and it was not specified in
+     the challenge that they needed to be sorted by updated or kept track of in a meaningful way.
+     */
+
     public Date updated;
     public Date created;
     public boolean enabled;
